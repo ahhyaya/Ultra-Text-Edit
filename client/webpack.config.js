@@ -60,7 +60,7 @@ module.exports = () => {
           user: {
             loader: 'babel-loader',
             options: {
-              preset: ['@babel/preset-env'],
+              presets: ['@babel/preset-env'],
               plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
             },
           },
