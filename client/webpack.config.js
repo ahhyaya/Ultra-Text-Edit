@@ -34,8 +34,8 @@ module.exports = () => {
         name: 'Ultra Text Edit',
         short_name: 'Text Edit',
         description: 'Amazing test editor!',
-        background_color: '#225cs3',
-        theme_color: '#225cs3',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         start_url: './',
         publicaPath: './',
         icons: [
