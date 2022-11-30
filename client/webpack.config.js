@@ -18,7 +18,34 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'Ultra Text Edit',
+      }),
       
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
+      }),
+
+      new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
+        name: 'Ultra Text Edit',
+        short_name: 'Text Edit',
+        description: 'Amazing test editor!',
+        background_color: '#225cs3',
+        theme_color: '#225cs3',
+        start_url: './',
+        publicaPath: './',
+        icons: [
+          {
+          src: path.client('src/images/logo.png'),
+          sizes: [96, 128, 192, 256, 384, 512],
+          destination: path.join('assets', 'icons'),
+          },
+        ],
+      }),
     ],
 
     module: {
