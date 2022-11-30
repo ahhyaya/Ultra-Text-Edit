@@ -16,23 +16,28 @@
 
 ## Description
 
-### An API of a text editor that runs in the browser.
+### An API of a text editor that runs in the browser, which can create notes or code snippets with or without an internet connection, also can reliably retrieve them for later use.
 
 ---
 
 ## Features
 
-- uses NoSQL database, can handle large amounts of unstructured data
-- when server is started, the Mongoose models are synced to the MongoDB database
-- the data for each of these routes is displayed in a formatted JSON
-- able to successfully create, update, and delete users and thoughts in database
-- able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
+- a single-page application that meets the PWA criteria
+- feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser
+- The application works without an internet connection
+- Uses IndexedDB to create an object store and includes both GET and PUT methods
+- Automatically saves content inside the text editor when the DOM window is unfocused
+- Bundled with webpack
+- Create a service worker with workbox that Caches static assets
+- use babel in order to use async / await
+- Can be installed as a Progressive Web Application
 
 ---
 
 ## Installation
 
-    Use Express.js for routing, a MongoDB database, and the Mongoose ODM. In addition to using the Express.js and Mongoose packages
+    Storing data to an IndexedDB database, idb package to wrap around the IndexedDB API. 
+    Use npm run start to start.
 
 - npm i
 - npm i webpack
