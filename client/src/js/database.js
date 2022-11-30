@@ -25,12 +25,13 @@ export const putDb = async (content) => {
   // open up the desired object store
   const store = tx.objectStore('jate');
 
-  // use .add() pass in the content
-  const request = store.add({ content });
+  // use .put() pass in the content
+  const request = store.put({ id: 1, value: content });
 
   // get confirmation of the request
   const result = await request;
   console.log('Data put to the database', result);
+  return result;
 
 };
 
@@ -47,9 +48,15 @@ export const getDb = async () => {
   // open up the desired object store
   const store = tx.objectStore('jate');
 
-  // use .add() pass in the content
-  const request = store.add({ content });
+  // use .getAll() pass in the content
+  const request = store.getAll();
 
+  const result = await request;
+
+  result
+    ? console.log('Data retrieved succesfully!', result)
+    : console.log('Data not found!');
+  return result;
 };
 
 initdb();
