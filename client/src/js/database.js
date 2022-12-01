@@ -56,7 +56,7 @@ export const getDb = async () => {
   result
     ? console.log('Data retrieved succesfully!', result)
     : console.log('Data not found!');
-  return result.value;
+  // return result.value;
 };
 
 initdb();
