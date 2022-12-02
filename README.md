@@ -7,7 +7,7 @@
 1. [Description](#description)
 2. [Features](#features)
 3. [Installation](#installation)
-4. [Demo](#demo)
+4. [Screenshots](#screenshots)
 5. [License](#license)
 6. [Tests](#tests)
 7. [Questions](#questions)
@@ -44,8 +44,9 @@
 - npm run start
 
 ---
-## Demo
-
+## Screenshots
+![Screenshots](./client/dist/assets/1.png)
+![Screenshots](./client/dist/assets/2.png)
 
 ---
 
@@ -68,7 +69,7 @@
 ### Reach me with additional questions:
 
 - Github Link: https://github.com/ahhyaya
-- Project Link: https://github.com/ahhyaya/Ultra-Text-Edit
+- Project Link: https://ultra-text-edit.herokuapp.com/
 - Email Address: toruig59@gmail.com
 
 - - -
