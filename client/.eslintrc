@@ -10,5 +10,10 @@
     "import/prefer-default-export": "off",
     "no-underscore-dangle": "off",
     "no-restricted-globals": "off"
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
   }
 }
